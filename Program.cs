@@ -45,6 +45,10 @@ namespace xr1_2
 			obj = "ほげ";
 			Console.WriteLine("obj = {0}", obj.GetType());
 
+			// dynamic型
+			dynamic dyn = 1;
+			// コンパイルエラー（現在Monoではdynamicは未対応）
+			// Console.WriteLine(dyn.GetType());
 		}
 	}
 }
