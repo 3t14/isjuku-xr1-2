@@ -26,15 +26,15 @@ namespace xr1_2
 			//Console.WriteLine("noInit = {0}", noInit.GetType());
 
 			// decimal型
-			// 10進数値で格納する変数型 			decimal d = 10; 			Console.WriteLine("d = {0}", d.GetType());
+			// 10進数値で格納する変数型
+			decimal d = 10;
+			Console.WriteLine("d = {0}", d.GetType());
 			d = 10.1234m;
 			Console.WriteLine("d = {0}", d.GetType());
-
+			
 			// decimal型おリテラルはmもしくはMを付与しなければならないため
 			// 下記はコンパイルエラーとなる。
 			// d = 1.234;
-
-			// object型 			object obj; 			obj = 1; // System.Int32 			Console.WriteLine("obj = {0}", obj.GetType()); 			// System.String すべてのクラスの派生元であるため 			// 動的に異なるデータ型を割りあてることが可能 			obj = "ほげ";  			Console.WriteLine("obj = {0}", obj.GetType());
 
 		}
 	}
