@@ -36,6 +36,15 @@ namespace xr1_2
 			// 下記はコンパイルエラーとなる。
 			// d = 1.234;
 
+			// object型
+			object obj;
+			obj = 1; // System.Int32
+			Console.WriteLine("obj = {0}", obj.GetType());
+			// System.String すべてのクラスの派生元であるため
+			// 動的に異なるデータ型を割りあてることが可能
+			obj = "ほげ";
+			Console.WriteLine("obj = {0}", obj.GetType());
+
 		}
 	}
 }
